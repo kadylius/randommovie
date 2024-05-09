@@ -10,16 +10,22 @@
   <style>
     /* Add your custom styles here */
     .movie-img {
-      width: 1000px; /* Adjust the image width as needed */
+      max-width: 100%; /* Adjust the image width as needed */
       height: auto;
+    }
+    .movie-display {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   </style>
 </head>
 <body>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <h1 class="text-center mb-4">Random Movie Generator</h1>
+      <div class="col-md-8 offset-md-2">
+        <h1 class="text-center mb-4">Random Movie Generator</h1> 
         <div class="text-center mb-4">
           <button id="randomMovieBtn" class="btn btn-primary">Generate Random Movie</button>
         </div>
@@ -29,7 +35,7 @@
             <!-- Populate dropdown options using JavaScript -->
           </select>
         </div>
-        <div id="movieDisplay" class="text-center">
+        <div id="movieDisplay" class="movie-display">
           <!-- Movie title and image will be displayed here -->
         </div>
       </div>
@@ -45,6 +51,10 @@
       {
         title: "Forrest Gump",
         imageURL: "https://www.hollywoodreporter.com/wp-content/uploads/2016/07/forrest_gump_still.jpg"
+      },
+      {
+        title: "Princess diaries",
+        imageURL: "https://lumiere-a.akamaihd.net/v1/images/p_theprincessdiaries_19875_2ef7e437.jpeg"
       },
       {
         title: "The Green Mile",
